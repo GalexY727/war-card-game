@@ -27,23 +27,31 @@ public class War
         boolean gameRunning = true;
 
         // ...then run the event loop
-        this.runEventLoop(player1, player2, gameRunning);
+        this.runEventLoop(player1, player2);
     }
     
     /**
      * This is the game's event loop. The code in here should come
      * from the War flowchart you created for this game
      */
-    public void runEventLoop(Deck p1, Deck p2, Boolean gameRunning) {
-        
-        while (p1.getDeckSize() > 0 && p2.getDeckSize() > 0 && gameRunning) {
+    public void runEventLoop(Deck p1, Deck p2) {
+        int round = 0;
+        boolean printWinner = true;
+        while (p1.getDeckSize() > 0 && p2.getDeckSize() > 0) {
             try {
+                round++;
+                if (round > 5000)
+                {
+                    System.out.println("After 5000 rounds, the game is a draw.");
+                    printWinner = false;
+                    break;
+                }
+                System.out.println("P1 Cards: " + p1.getDeckSize());
+                System.out.println("P2 Cards: " + p2.getDeckSize());
                 Card p1Card = p1.dealCardFromDeck();
                 Card p2Card = p2.dealCardFromDeck();
                 System.out.println("Player 1: " + p1Card.getFace() + " of " + p1Card.getSuit());
-                System.out.println("P1 Cards: " + p1.getDeckSize());
                 System.out.println("Player 2: " + p2Card.getFace() + " of " + p2Card.getSuit());
-                System.out.println("P2 Cards: " + p2.getDeckSize());
                 if (p1Card.getRank() > p2Card.getRank()) {
                     System.out.println("Player 1 wins the round!");
                     p1.addCardToDeck(p1Card);
@@ -77,6 +85,8 @@ public class War
                             for (Card c : p2WarCards) {
                                 p1.addCardToDeck(c);
                             }
+                            System.out.println("P1 Cards: " + p1.getDeckSize());
+                            System.out.println("P2 Cards: " + p2.getDeckSize());
                         } else if (p1Card.getRank() < p2Card.getRank()) {
                             System.out.println("Player 2 wins the war!");
                             for (Card c : p1WarCards) {
@@ -85,6 +95,8 @@ public class War
                             for (Card c : p2WarCards) {
                                 p2.addCardToDeck(c);
                             }
+                            System.out.println("P1 Cards: " + p1.getDeckSize());
+                            System.out.println("P2 Cards: " + p2.getDeckSize());
                         } else {
                             System.out.println("War!");
                         }
@@ -96,18 +108,26 @@ public class War
             {
                 if (p1.getDeckSize() > 0)
                 {
-                    System.out.println("Player 1 wins!");
+                    System.out.println("Player 1 wins the game!");
                 }
                 else
                 {
-                    System.out.println("Player 2 wins!");
+                    System.out.println("Player 2 wins the game!");
                 }
-                gameRunning = false;
+                printWinner = false;
+                break;
             }
-                            System.out.println("P1 Cards: " + p1.getDeckSize());
-                System.out.println("P2 Cards: " + p2.getDeckSize());
-
-                        gameRunning = false;
+        }
+        if (printWinner)
+        {
+            if (p1.getDeckSize() > 0)
+            {
+                System.out.println("Player 1 wins the game!");
+            }
+            else
+            {
+                System.out.println("Player 2 wins the game!");
+            }
         }
         
     }

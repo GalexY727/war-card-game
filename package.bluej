@@ -1,12 +1,12 @@
 #BlueJ package file
-dependency1.from=Deck
+dependency1.from=War
 dependency1.to=Card
 dependency1.type=UsesDependency
 dependency2.from=War
-dependency2.to=Card
+dependency2.to=Deck
 dependency2.type=UsesDependency
-dependency3.from=War
-dependency3.to=Deck
+dependency3.from=Deck
+dependency3.to=Card
 dependency3.type=UsesDependency
 editor.fx.0.height=1053
 editor.fx.0.width=1846

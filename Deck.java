@@ -21,9 +21,11 @@ public class Deck
     
     public void initializeNewDeck()
     {
-        String[] suits = {"Hearts","Clubs","Spades","Diamonds"};
+        //String[] suits = {"Hearts","Clubs","Spades","Diamonds"};
+        String[] suits = {"H","C","S","D"};
         int[] ranks = {2,3,4,5,6,7,8,9,10,11,12,13,14};
-        String[] faces = {"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
+        //String[] faces = {"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
+        String[] faces = {"2","3","4","5","6","7","8","9","10","J ","Q ","K" ,"A "};
 
         for (String suit : suits)
         {
@@ -51,6 +53,21 @@ public class Deck
      */
     public void shuffle()
     {
+        for (int j = 0; j < getDeckSize(); j++)
+        {
+            System.out.print(cards.get(j).getFace() + cards.get(j).getSuit());
+            if (cards.get(j).getRank() < 10)
+            {
+                System.out.print("  | ");
+            }
+            else
+            {
+                System.out.print(" | ");
+            }
+        }
+        System.out.println();
+
+
         for (int i = 0; i < getDeckSize(); i++)
         {
             int random = (int)(Math.random() * getDeckSize());
@@ -62,8 +79,22 @@ public class Deck
             this.cards.set(random, temp);
 
         }
+        for (int j = 0; j < getDeckSize(); j++)
+        {
+            System.out.print(cards.get(j).getFace() + cards.get(j).getSuit());
+            if (cards.get(j).getRank() < 10)
+            {
+                System.out.print("  | ");
+            }
+            else
+            {
+                System.out.print(" | ");
+            }
+
+        }
+        System.out.println("\n\n");
     }
-    
+
     /**
      * Deal all the cards in the deck to make two new decks of cards
      * 
