@@ -53,19 +53,19 @@ public class Deck
      */
     public void shuffle()
     {
-        for (int j = 0; j < getDeckSize(); j++)
-        {
-            System.out.print(cards.get(j).getFace() + cards.get(j).getSuit());
-            if (cards.get(j).getRank() < 10)
-            {
-                System.out.print("  | ");
-            }
-            else
-            {
-                System.out.print(" | ");
-            }
-        }
-        System.out.println();
+//        for (int j = 0; j < getDeckSize(); j++)
+//        {
+//            System.out.print(cards.get(j).getFace() + cards.get(j).getSuit());
+//            if (cards.get(j).getRank() < 10)
+//            {
+//                System.out.print("  | ");
+//            }
+//            else
+//            {
+//                System.out.print(" | ");
+//            }
+//        }
+//        System.out.println();
 
 
         for (int i = 0; i < getDeckSize(); i++)
@@ -79,20 +79,20 @@ public class Deck
             this.cards.set(random, temp);
 
         }
-        for (int j = 0; j < getDeckSize(); j++)
-        {
-            System.out.print(cards.get(j).getFace() + cards.get(j).getSuit());
-            if (cards.get(j).getRank() < 10)
-            {
-                System.out.print("  | ");
-            }
-            else
-            {
-                System.out.print(" | ");
-            }
-
-        }
-        System.out.println("\n\n");
+//        for (int j = 0; j < getDeckSize(); j++)
+//        {
+//            System.out.print(cards.get(j).getFace() + cards.get(j).getSuit());
+//            if (cards.get(j).getRank() < 10)
+//            {
+//                System.out.print("  | ");
+//            }
+//            else
+//            {
+//                System.out.print(" | ");
+//            }
+//
+//        }
+//        System.out.println("\n\n");
     }
 
     /**
