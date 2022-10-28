@@ -18,7 +18,10 @@ public class Deck
     {
         cards = new ArrayList<Card>();
     }
-    
+
+    /**
+     * Initialize a new deck of cards
+     */
     public void initializeNewDeck()
     {
         //String[] suits = {"Hearts","Clubs","Spades","Diamonds"};
@@ -42,7 +45,7 @@ public class Deck
     /**
      * Get the number of cards in the deck
      * 
-     * @returns Number of cards in the deck
+     * @return Number of cards in the deck
      */
     public int getDeckSize() {
         return cards.size();
@@ -53,20 +56,6 @@ public class Deck
      */
     public void shuffle()
     {
-//        for (int j = 0; j < getDeckSize(); j++)
-//        {
-//            System.out.print(cards.get(j).getFace() + cards.get(j).getSuit());
-//            if (cards.get(j).getRank() < 10)
-//            {
-//                System.out.print("  | ");
-//            }
-//            else
-//            {
-//                System.out.print(" | ");
-//            }
-//        }
-//        System.out.println();
-
 
         for (int i = 0; i < getDeckSize(); i++)
         {
@@ -79,26 +68,12 @@ public class Deck
             this.cards.set(random, temp);
 
         }
-//        for (int j = 0; j < getDeckSize(); j++)
-//        {
-//            System.out.print(cards.get(j).getFace() + cards.get(j).getSuit());
-//            if (cards.get(j).getRank() < 10)
-//            {
-//                System.out.print("  | ");
-//            }
-//            else
-//            {
-//                System.out.print(" | ");
-//            }
-//
-//        }
-//        System.out.println("\n\n");
     }
 
     /**
      * Deal all the cards in the deck to make two new decks of cards
      * 
-     * @returns Deck array where index 0 is the first deck and index 1 is the second deck
+     * @return Deck array where index 0 is the first deck and index 1 is the second deck
      */
     public Deck[] dealDeck()
     {
@@ -120,7 +95,7 @@ public class Deck
     
     /**
      * Deal the top card of the deck and remove it from the deck
-     * @returns The top card of the deck (at cards index 0)
+     * @return The top card of the deck (at cards index 0)
      */
     public Card dealCardFromDeck()
     {

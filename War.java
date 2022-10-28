@@ -17,50 +17,41 @@ public class War
     public War()
     {
         // Initializations here...
-        Card card = new Card(1, "Ace", "Spades");
         Deck deck = new Deck();
         deck.initializeNewDeck();
         deck.shuffle();
         Deck[] halves = deck.dealDeck();
-        Deck player1 = halves[0];
-        Deck player2 = halves[1];
-        boolean gameRunning = true;
-
+        Deck p1 = halves[0];
+        Deck p2 = halves[1];
         // ...then run the event loop
-        this.runEventLoop(player1, player2);
-
-
-
-
-
-
+        this.runEventLoop(p1, p2);
     }
     
     /**
      * This is the game's event loop. The code in here should come
      * from the War flowchart you created for this game
+     *
+     * @param p2 The first player's deck
+     * @param p1 The second player's deck
      */
-    public int runEventLoop(Deck p1, Deck p2) {
+    public void runEventLoop(Deck p1, Deck p2) {
 
         int round = 0;
-        boolean printWinner = true;
 
         while (p1.getDeckSize() > 0 && p2.getDeckSize() > 0) {
 
             System.out.println("\nRound " + round + "\n");
+            round++;
+
+            // used to prevent games from going on extremely long
+            // randomizes the ordering of how cards are received
             int order = Math.random() > 0.5 ? 1 : 2;
+
+            System.out.println("P1 Cards: " + p1.getDeckSize());
+            System.out.println("P2 Cards: " + p2.getDeckSize());
+
+            // try is used in case of p1.getDeckSize --> 0
             try {
-                round++;
-                if (round > 5000)
-                {
-
-                    System.out.println("After 5000 rounds, the game is a draw.");
-                    printWinner = false;
-                    break;
-                }
-
-                System.out.println("P1 Cards: " + p1.getDeckSize());
-                System.out.println("P2 Cards: " + p2.getDeckSize());
 
                 Card p1Card = p1.dealCardFromDeck();
                 Card p2Card = p2.dealCardFromDeck();
@@ -68,15 +59,18 @@ public class War
                 System.out.println("Player 1: " + p1Card.getFace() + " of " + p1Card.getSuit());
                 System.out.println("Player 2: " + p2Card.getFace() + " of " + p2Card.getSuit());
 
+                // if player one has the better card
+                // they get both cards that are in play
                 if (p1Card.getRank() > p2Card.getRank())
                 {
 
                     System.out.println("Player 1 wins the round!");
 
-
                     p1.addCardToDeck(order > 1 ? p1Card : p2Card);
                     p1.addCardToDeck(order > 1 ? p2Card : p1Card);
                 }
+                // if player two has the better card
+                // they get both cards that are in play
                 else if (p1Card.getRank() < p2Card.getRank())
                 {
 
@@ -96,6 +90,7 @@ public class War
                     p1WarCards.add(p1Card);
                     p2WarCards.add(p2Card);
 
+                    // looped in case of another tie
                     while (p1Card.getRank() == p2Card.getRank())
                     {
 
@@ -161,33 +156,20 @@ public class War
             // Meaning that a player has 0 cards
             catch (Exception e)
             {
-                // If player 1 has 0 cards, player 2 wins
-                // If player 2 has 0 cards, player 1 wins
-                if (p1.getDeckSize() > 0)
-                {
-                    System.out.println("Player 1 wins the game!");
-                }
-                else
-                {
-                    System.out.println("Player 2 wins the game!");
-                }
-                printWinner = false;
+                // Will prompt the winner to be printed
                 break;
             }
         }
-        if (printWinner)
+
+        if (p1.getDeckSize() > 0)
         {
-            if (p1.getDeckSize() > 0)
-            {
-                System.out.println("Player 1 wins the game!");
-            }
-            else
-            {
-                System.out.println("Player 2 wins the game!");
-            }
+            System.out.println("Player 1 wins the game!");
         }
-        return round;
-        
+        else
+        {
+            System.out.println("Player 2 wins the game!");
+        }
+
     }
     
     /**
