@@ -4,6 +4,31 @@ import java.util.List;
 
 public class Tree {
 
+    private static Node<Integer> war(int[] history)
+    {
+        Node<Integer> root = new Node<Integer>(0);
+        Node<Integer> p1 = new Node<Integer>(1);
+        //Node<Integer> p2 = new Node<Integer>(2);
+
+        root.left = p1;
+
+        for (int i = 0; i < history.length; i++)
+        {
+            Node<Integer> winner = new Node<Integer>(history[i]);
+            if (history[i] == 1)
+            {
+                p1.left = winner;
+            }
+            else
+            {
+                p1.right = winner;
+            }
+            p1 = winner;
+
+        }
+
+        return root;
+    }
     private static Node<Integer> test1() {
         Node<Integer> root = new Node<Integer>(2);
         Node<Integer> n11 = new Node<Integer>(7);
@@ -69,8 +94,9 @@ public class Tree {
 
     public static void main(String[] args) {
 
-        BTreePrinter.printNode(test1());
-        BTreePrinter.printNode(test2());
+//        BTreePrinter.printNode(test1());
+//        BTreePrinter.printNode(test2());
+        BTreePrinter.printNode(war());
 
     }
 }
