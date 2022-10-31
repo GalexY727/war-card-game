@@ -7,23 +7,19 @@ public class Tree {
     private static Node<Integer> war(int[] history)
     {
         Node<Integer> root = new Node<Integer>(0);
-        Node<Integer> p1 = new Node<Integer>(1);
-        //Node<Integer> p2 = new Node<Integer>(2);
-
-        root.left = p1;
 
         for (int i = 0; i < history.length; i++)
         {
             Node<Integer> winner = new Node<Integer>(history[i]);
             if (history[i] == 1)
             {
-                p1.left = winner;
+                root.left = winner;
             }
             else
             {
-                p1.right = winner;
+                root.right = winner;
             }
-            p1 = winner;
+            root = winner;
 
         }
 
