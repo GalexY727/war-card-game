@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Collections;
 import java.util.ArrayList;
 
 /**
@@ -7,6 +8,7 @@ import java.util.ArrayList;
  * @author Mr. Jaffe
  * @version 2022-10-19
  */
+
 public class War
 {
     /**
@@ -37,8 +39,9 @@ public class War
     public void runEventLoop(Deck p1, Deck p2) {
 
         int round = 0;
+        ArrayList<Integer> h = new ArrayList<Integer>();
 
-        while (p1.getDeckSize() > 0 && p2.getDeckSize() > 0) {
+        while (p1.getDeckSize() > 0 && p2.getDeckSize() > 0 && round < 5) {
 
             System.out.println("\nRound " + round + "\n");
             round++;
@@ -65,6 +68,7 @@ public class War
                 {
 
                     System.out.println("Player 1 wins the round!");
+                    h.add(1);
 
                     p1.addCardToDeck(order > 1 ? p1Card : p2Card);
                     p1.addCardToDeck(order > 1 ? p2Card : p1Card);
@@ -75,6 +79,7 @@ public class War
                 {
 
                     System.out.println("Player 2 wins the round!");
+                    h.add(2);
 
                     p2.addCardToDeck(order > 1 ? p1Card : p2Card);
                     p2.addCardToDeck(order > 1 ? p2Card : p1Card);
@@ -116,20 +121,23 @@ public class War
                         {
 
                             System.out.println("Player 1 wins the war!");
+                            h.add(1);
+
                             for (Card c : p1WarCards) {
                                 p1.addCardToDeck(c);
                             }
                             for (Card c : p2WarCards) {
                                 p1.addCardToDeck(c);
                             }
+
                             System.out.println("P1 Cards: " + p1.getDeckSize());
                             System.out.println("P2 Cards: " + p2.getDeckSize());
-
                         }
                         else if (p1Card.getRank() < p2Card.getRank())
                         {
 
                             System.out.println("Player 2 wins the war!");
+                            h.add(2);
 
                             for (Card c : p1WarCards) {
                                 p2.addCardToDeck(c);
@@ -170,8 +178,46 @@ public class War
             System.out.println("Player 2 wins the game!");
         }
 
+        int[] hArr = new int[h.size()];
+        for (int i = 0; i < h.size(); i++) { hArr[i] = h.get(i); }
+
+        printHistory(hArr);
     }
-    
+
+    private void printHistory(int[] h) {
+        int spaces = 75;
+
+        for (int i = 0; i < h.length; i++) {
+
+            if (h[i] == 1) {
+                for (int j = 0; j < spaces; j++) { System.out.print(" "); }
+
+                System.out.print("P1\n");
+
+                spaces = (spaces > 0) ? spaces - 2 : 0;
+
+            }
+            else
+            {
+                for (int j = 0; j < spaces; j++) { System.out.print(" "); }
+
+                System.out.print("P2\n");
+                spaces += 2;
+
+                if (i+1 < h.length && h[i+1] == 1) {
+                    for (int j = 0; j < spaces; j++) { System.out.print(" "); }
+                }
+
+
+                spaces += 2;
+            }
+
+            System.out.println();
+        }
+    }
+
+
+
     /**
      * The main method is called when Java starts your program
      */
@@ -180,3 +226,5 @@ public class War
     }
 
 }
+
+
