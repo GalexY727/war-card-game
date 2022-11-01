@@ -184,20 +184,23 @@ public class War
 
         for (int i = 0; i < h.size(); i++)
         {
+            int temp = spaces; 
             hArr[i] = h.get(i);
 
             if (hArr[i] == 1)
             {
-                spaces--;
+                spaces++;
 
             }
             else
             {
-                spaces++;
+                spaces--;
             }
+            
+            p1Streak = Math.max(temp, spaces); 
         }
 
-        printHistory(hArr, Math.max(0, spaces));
+        printHistory(hArr, p1Streak);
     }
 
     private void printHistory(int[] h, int spaces) {
