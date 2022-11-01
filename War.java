@@ -41,7 +41,7 @@ public class War
         int round = 0;
         ArrayList<Integer> h = new ArrayList<Integer>();
 
-        while (p1.getDeckSize() > 0 && p2.getDeckSize() > 0 && round < 5) {
+        while (p1.getDeckSize() > 0 && p2.getDeckSize() > 0 && round < 25) {
 
             System.out.println("\nRound " + round + "\n");
             round++;
@@ -179,13 +179,28 @@ public class War
         }
 
         int[] hArr = new int[h.size()];
-        for (int i = 0; i < h.size(); i++) { hArr[i] = h.get(i); }
+        int spaces = 0;
+        int p1Streak = 0;
 
-        printHistory(hArr);
+        for (int i = 0; i < h.size(); i++)
+        {
+            hArr[i] = h.get(i);
+
+            if (hArr[i] == 1)
+            {
+                spaces--;
+
+            }
+            else
+            {
+                spaces++;
+            }
+        }
+
+        printHistory(hArr, Math.max(0, spaces));
     }
 
-    private void printHistory(int[] h) {
-        int spaces = 75;
+    private void printHistory(int[] h, int spaces) {
 
         for (int i = 0; i < h.length; i++) {
 
@@ -193,23 +208,33 @@ public class War
                 for (int j = 0; j < spaces; j++) { System.out.print(" "); }
 
                 System.out.print("P1\n");
-
-                spaces = (spaces > 0) ? spaces - 2 : 0;
-
             }
             else
             {
                 for (int j = 0; j < spaces; j++) { System.out.print(" "); }
 
                 System.out.print("P2\n");
-                spaces += 2;
+            }
 
-                if (i+1 < h.length && h[i+1] == 1) {
-                    for (int j = 0; j < spaces; j++) { System.out.print(" "); }
-                }
+            if (i+1 < h.length && h[i+1] == 1)
+            {
+                spaces = (spaces > 0) ? spaces - 1 : 0;
 
+                for (int j = 0; j < spaces; j++) { System.out.print(" "); }
 
-                spaces += 2;
+                System.out.print('/');
+
+                spaces = (spaces > 0) ? spaces - 1 : 0;
+            }
+            else if (i+1 < h.length && h[i+1] == 2)
+            {
+                spaces++;
+
+                for (int j = 0; j < spaces; j++) { System.out.print(" "); }
+
+                System.out.print('\\');
+
+                spaces++;
             }
 
             System.out.println();
