@@ -1,8 +1,8 @@
 ------------------------------------------------------------------------
-War project starting template for APCSA
+War project for APCSA
 ------------------------------------------------------------------------
 
 PROJECT TITLE: War
-PURPOSE OF PROJECT: Template code for project
-DATE: 2022-10-19
-AUTHOR: Mr. Jaffe
+PURPOSE OF PROJECT: To teach algorithms via the War Card game
+DATE: 2022-10-19 - 2022-11-1
+AUTHOR: Mr. Jaffe, Alexander Hamilton, and Jacob Hotz

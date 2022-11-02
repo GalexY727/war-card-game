@@ -41,7 +41,7 @@ public class War
         int round = 0;
         ArrayList<Integer> h = new ArrayList<Integer>();
 
-        while (p1.getDeckSize() > 0 && p2.getDeckSize() > 0 && round < 25) {
+        while (p1.getDeckSize() > 0 && p2.getDeckSize() > 0) {
 
             System.out.println("\nRound " + round + "\n");
             round++;
@@ -178,11 +178,14 @@ public class War
             System.out.println("Player 2 wins the game!");
         }
 
+
+        // Creates the history of the game to
+        // print as a NodeTree
         int[] hArr = new int[h.size()];
         int spaces = 0;
         int p1Streak = 0;
 
-        for (int i = 0; i < h.size(); i++)
+        for (int i = 1; i < h.size(); i++)
         {
             int temp = spaces; 
             hArr[i] = h.get(i);
@@ -196,48 +199,136 @@ public class War
             {
                 spaces--;
             }
-            
-            p1Streak = Math.max(temp, spaces); 
+
+            p1Streak = Math.max(temp, Math.max(p1Streak, spaces));
+
         }
 
-        printHistory(hArr, p1Streak);
+        printHistory(hArr, p1Streak*2);
     }
 
+    /**
+     * Prints the history of the game as a NodeTree
+     * @param h the history of the game
+     * @param spaces the number of spaces to print before the fist node
+     *               (used to make the tree look nice)
+     *               (determined via the delta change of player 1's winnings)
+     *               (because player 1 branches left)
+     *               (to align with the left of the console)
+     *               (these parentheses are getting out of hand)
+     */
     private void printHistory(int[] h, int spaces) {
 
+        int origin = spaces;
+
         for (int i = 0; i < h.length; i++) {
-
             if (h[i] == 1) {
-                for (int j = 0; j < spaces; j++) { System.out.print(" "); }
+                for (int j = 0; j < spaces; j++)
+                {
+                    if (j == origin)
+                    {
+                        System.out.print("|");
+                    }
+                    else
+                    {
+                        System.out.print(" ");
+                    }
+                }
 
-                System.out.print("P1\n");
+                System.out.print("P1");
+                if (origin > spaces)
+                {
+                    for (int j = spaces+2; j < origin; j++)
+                    {
+                        System.out.print(" ");
+                    }
+                    System.out.print("|");
+                }
+                System.out.println();
             }
             else
             {
-                for (int j = 0; j < spaces; j++) { System.out.print(" "); }
+                for (int j = 0; j < spaces; j++)
+                {
+                    if (j == origin)
+                    {
+                        System.out.print("|");
+                    }
+                    else
+                    {
+                        System.out.print(" ");
+                    }
+                }
 
-                System.out.print("P2\n");
+                System.out.print("P2");
+                if (origin > spaces)
+                {
+                    for (int j = spaces+2; j < origin; j++)
+                    {
+                        System.out.print(" ");
+                    }
+                    System.out.print("|");
+                }
+                System.out.println();
             }
 
             if (i+1 < h.length && h[i+1] == 1)
             {
                 spaces = (spaces > 0) ? spaces - 1 : 0;
 
-                for (int j = 0; j < spaces; j++) { System.out.print(" "); }
+                for (int j = 0; j < spaces; j++)
+                {
+                    if (j == origin)
+                    {
+                        System.out.print("|");
+                    }
+                    else
+                    {
+                        System.out.print(" ");
+                    }
+                }
 
                 System.out.print('/');
 
                 spaces = (spaces > 0) ? spaces - 1 : 0;
+
+                if (origin > spaces)
+                {
+                    for (int j = spaces+2; j < origin; j++)
+                    {
+                        System.out.print(" ");
+                    }
+                    System.out.print("|");
+                }
             }
             else if (i+1 < h.length && h[i+1] == 2)
             {
                 spaces++;
 
-                for (int j = 0; j < spaces; j++) { System.out.print(" "); }
+                for (int j = 0; j < spaces; j++)
+                {
+                    if (j == origin)
+                    {
+                        System.out.print("|");
+                    }
+                    else
+                    {
+                        System.out.print(" ");
+                    }
+                }
 
                 System.out.print('\\');
-
                 spaces++;
+
+                if (origin > spaces-1)
+                {
+                    for (int j = spaces; j < origin; j++)
+                    {
+                        System.out.print(" ");
+                    }
+                    System.out.print("|");
+                }
+
             }
 
             System.out.println();

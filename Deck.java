@@ -24,11 +24,9 @@ public class Deck
      */
     public void initializeNewDeck()
     {
-        //String[] suits = {"Hearts","Clubs","Spades","Diamonds"};
-        String[] suits = {"H","C","S","D"};
+        String[] suits = {"Hearts","Clubs","Spades","Diamonds"};
         int[] ranks = {2,3,4,5,6,7,8,9,10,11,12,13,14};
-        //String[] faces = {"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
-        String[] faces = {"2","3","4","5","6","7","8","9","10","J ","Q ","K" ,"A "};
+        String[] faces = {"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
 
         for (String suit : suits)
         {
