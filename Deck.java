@@ -57,6 +57,7 @@ public class Deck
 
         for (int i = 0; i < getDeckSize(); i++)
         {
+
             int random = (int)(Math.random() * getDeckSize());
 
             Card temp = cards.get(i);
@@ -64,7 +65,6 @@ public class Deck
             this.cards.set(i, cards.get(random));
 
             this.cards.set(random, temp);
-
         }
     }
 

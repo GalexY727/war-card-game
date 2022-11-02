@@ -190,6 +190,7 @@ public class War
             System.out.println("Player 2 wins the game!");
         }
 
+        System.out.println("\n\nGame History:\n\n");
 
         // Creates the history of the game to
         // print as a NodeTree
