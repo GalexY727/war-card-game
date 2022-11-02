@@ -1,6 +1,9 @@
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.util.List;
 import java.util.Collections;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * War game class
@@ -19,6 +22,8 @@ public class War
     public War()
     {
         // Initializations here...
+
+
         Deck deck = new Deck();
         deck.initializeNewDeck();
         deck.shuffle();
@@ -37,6 +42,13 @@ public class War
      * @param p1 The second player's deck
      */
     public void runEventLoop(Deck p1, Deck p2) {
+
+
+        //create a scanner to read input from the user
+        Scanner input = new Scanner(System.in);
+        System.out.println("Do you want to log the history of the game to log.txt? (y/n)");
+        String UsrStr = input.nextLine();
+        boolean log = UsrStr.equals("y");
 
         int round = 0;
         ArrayList<Integer> h = new ArrayList<Integer>();
@@ -204,7 +216,7 @@ public class War
 
         }
 
-        printHistory(hArr, p1Streak*2);
+        printHistory(hArr, p1Streak*2, log);
     }
 
     /**
@@ -217,57 +229,48 @@ public class War
      *               (to align with the left of the console)
      *               (these parentheses are getting out of hand)
      */
-    private void printHistory(int[] h, int spaces) {
+    private void printHistory(int[] h, int spaces, boolean log) {
+
+        if (log) {
+            try {
+                PrintStream fileOut = new PrintStream("./out.txt");
+                System.setOut(fileOut);
+
+            } catch (FileNotFoundException e) {
+
+                throw new RuntimeException(e);
+            }
+        }
+
+        // add the max number of digits in the round count to spaces
+        spaces += (int) Math.log10(h.length) + 2;
 
         int origin = spaces;
 
         for (int i = 0; i < h.length; i++) {
+
+            // check if the number of digits in the round count will change next round
+            if (((int) Math.log10(i) + 1) != ((int) Math.log10(i+1) + 1)) { origin--; spaces--; }
+
             if (h[i] == 1) {
-                for (int j = 0; j < spaces; j++)
-                {
-                    if (j == origin)
-                    {
-                        System.out.print("|");
-                    }
-                    else
-                    {
-                        System.out.print(" ");
-                    }
-                }
+
+                printLeadingSpaces(spaces, origin, i, false);
 
                 System.out.print("P1");
                 if (origin > spaces)
                 {
-                    for (int j = spaces+2; j < origin; j++)
-                    {
-                        System.out.print(" ");
-                    }
-                    System.out.print("|");
+                    printTrailingSpaces(spaces + 2, origin);
                 }
                 System.out.println();
             }
             else
             {
-                for (int j = 0; j < spaces; j++)
-                {
-                    if (j == origin)
-                    {
-                        System.out.print("|");
-                    }
-                    else
-                    {
-                        System.out.print(" ");
-                    }
-                }
+                printLeadingSpaces(spaces, origin, i, false);
 
                 System.out.print("P2");
                 if (origin > spaces)
                 {
-                    for (int j = spaces+2; j < origin; j++)
-                    {
-                        System.out.print(" ");
-                    }
-                    System.out.print("|");
+                    printTrailingSpaces(spaces + 2, origin);
                 }
                 System.out.println();
             }
@@ -276,17 +279,7 @@ public class War
             {
                 spaces = (spaces > 0) ? spaces - 1 : 0;
 
-                for (int j = 0; j < spaces; j++)
-                {
-                    if (j == origin)
-                    {
-                        System.out.print("|");
-                    }
-                    else
-                    {
-                        System.out.print(" ");
-                    }
-                }
+                printLeadingSpaces(spaces, origin, i, true);
 
                 System.out.print('/');
 
@@ -294,47 +287,76 @@ public class War
 
                 if (origin > spaces)
                 {
-                    for (int j = spaces+2; j < origin; j++)
-                    {
-                        System.out.print(" ");
-                    }
-                    System.out.print("|");
+                    printTrailingSpaces(spaces + 2, origin);
                 }
             }
             else if (i+1 < h.length && h[i+1] == 2)
             {
                 spaces++;
 
-                for (int j = 0; j < spaces; j++)
-                {
-                    if (j == origin)
-                    {
-                        System.out.print("|");
-                    }
-                    else
-                    {
-                        System.out.print(" ");
-                    }
-                }
+                printLeadingSpaces(spaces, origin, i, true);
 
                 System.out.print('\\');
                 spaces++;
 
                 if (origin > spaces-1)
                 {
-                    for (int j = spaces; j < origin; j++)
-                    {
-                        System.out.print(" ");
-                    }
-                    System.out.print("|");
+                    printTrailingSpaces(spaces, origin);
                 }
-
             }
 
             System.out.println();
         }
     }
 
+    /**
+     * Prints the leading spaces of the NodeTree
+     * @param spaces the number of spaces to print
+     * @param origin the origin of the tree
+     */
+    private void printTrailingSpaces(int spaces, int origin) {
+        for (int j = spaces; j < origin; j++)
+        {
+            System.out.print(" ");
+        }
+        System.out.print("|");
+    }
+
+    /**
+     * Prints the leading spaces for the NodeTree
+     * @param spaces the number of spaces to print
+     * @param origin the origin of the tree
+     * @param i the current index of the history array
+     */
+    private void printLeadingSpaces(int spaces, int origin, int i, boolean branch) {
+        for (int j = 0; j < spaces; j++)
+        {
+            if (j == 0)
+            {
+                int round = i + 1;
+                if (!branch)
+                {
+                    System.out.print("Round: " + round + " ");
+                }
+                else
+                {
+                    System.out.print("        ");
+                    for (int k = 0; k < (int) Math.log10(round) + 1; k++)
+                    {
+                        System.out.print(" ");
+                    }
+                }
+            }
+            else if (j == origin)
+            {
+                System.out.print("|");
+            }
+            else
+            {
+                System.out.print(" ");
+            }
+        }
+    }
 
 
     /**

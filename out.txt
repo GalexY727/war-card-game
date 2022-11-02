@@ -1,0 +1,1002 @@
+Round: 1                                         P2
+                                                /|
+Round: 2                                       P1|
+                                              /  |
+Round: 3                                     P1  |
+                                              \  |
+Round: 4                                       P2|
+                                                \|
+Round: 5                                         P2
+                                                 |\
+Round: 6                                         | P2
+                                                 |/
+Round: 7                                         P1
+                                                 |\
+Round: 8                                         | P2
+                                                 |  \
+Round: 9                                         |   P2
+                                                 |  /
+Round: 10                                        | P1
+                                                 |/
+Round: 11                                        P1
+                                                /|
+Round: 12                                      P1|
+                                              /  |
+Round: 13                                    P1  |
+                                              \  |
+Round: 14                                      P2|
+                                                \|
+Round: 15                                        P2
+                                                /|
+Round: 16                                      P1|
+                                              /  |
+Round: 17                                    P1  |
+                                              \  |
+Round: 18                                      P2|
+                                                \|
+Round: 19                                        P2
+                                                 |\
+Round: 20                                        | P2
+                                                 |/
+Round: 21                                        P1
+                                                /|
+Round: 22                                      P1|
+                                              /  |
+Round: 23                                    P1  |
+                                              \  |
+Round: 24                                      P2|
+                                              /  |
+Round: 25                                    P1  |
+                                              \  |
+Round: 26                                      P2|
+                                                \|
+Round: 27                                        P2
+                                                /|
+Round: 28                                      P1|
+                                              /  |
+Round: 29                                    P1  |
+                                              \  |
+Round: 30                                      P2|
+                                              /  |
+Round: 31                                    P1  |
+                                              \  |
+Round: 32                                      P2|
+                                              /  |
+Round: 33                                    P1  |
+                                              \  |
+Round: 34                                      P2|
+                                              /  |
+Round: 35                                    P1  |
+                                              \  |
+Round: 36                                      P2|
+                                              /  |
+Round: 37                                    P1  |
+                                            /    |
+Round: 38                                  P1    |
+                                            \    |
+Round: 39                                    P2  |
+                                            /    |
+Round: 40                                  P1    |
+                                            \    |
+Round: 41                                    P2  |
+                                              \  |
+Round: 42                                      P2|
+                                              /  |
+Round: 43                                    P1  |
+                                            /    |
+Round: 44                                  P1    |
+                                            \    |
+Round: 45                                    P2  |
+                                              \  |
+Round: 46                                      P2|
+                                                \|
+Round: 47                                        P2
+                                                 |\
+Round: 48                                        | P2
+                                                 |/
+Round: 49                                        P1
+                                                 |\
+Round: 50                                        | P2
+                                                 |/
+Round: 51                                        P1
+                                                 |\
+Round: 52                                        | P2
+                                                 |/
+Round: 53                                        P1
+                                                /|
+Round: 54                                      P1|
+                                              /  |
+Round: 55                                    P1  |
+                                            /    |
+Round: 56                                  P1    |
+                                          /      |
+Round: 57                                P1      |
+                                          \      |
+Round: 58                                  P2    |
+                                            \    |
+Round: 59                                    P2  |
+                                            /    |
+Round: 60                                  P1    |
+                                          /      |
+Round: 61                                P1      |
+                                          \      |
+Round: 62                                  P2    |
+                                          /      |
+Round: 63                                P1      |
+                                          \      |
+Round: 64                                  P2    |
+                                          /      |
+Round: 65                                P1      |
+                                        /        |
+Round: 66                              P1        |
+                                      /          |
+Round: 67                            P1          |
+                                      \          |
+Round: 68                              P2        |
+                                      /          |
+Round: 69                            P1          |
+                                    /            |
+Round: 70                          P1            |
+                                    \            |
+Round: 71                            P2          |
+                                      \          |
+Round: 72                              P2        |
+                                        \        |
+Round: 73                                P2      |
+                                          \      |
+Round: 74                                  P2    |
+                                          /      |
+Round: 75                                P1      |
+                                        /        |
+Round: 76                              P1        |
+                                      /          |
+Round: 77                            P1          |
+                                      \          |
+Round: 78                              P2        |
+                                        \        |
+Round: 79                                P2      |
+                                        /        |
+Round: 80                              P1        |
+                                      /          |
+Round: 81                            P1          |
+                                    /            |
+Round: 82                          P1            |
+                                  /              |
+Round: 83                        P1              |
+                                /                |
+Round: 84                      P1                |
+                                \                |
+Round: 85                        P2              |
+                                /                |
+Round: 86                      P1                |
+                              /                  |
+Round: 87                    P1                  |
+                              \                  |
+Round: 88                      P2                |
+                                \                |
+Round: 89                        P2              |
+                                /                |
+Round: 90                      P1                |
+                              /                  |
+Round: 91                    P1                  |
+                              \                  |
+Round: 92                      P2                |
+                              /                  |
+Round: 93                    P1                  |
+                            /                    |
+Round: 94                  P1                    |
+                            \                    |
+Round: 95                    P2                  |
+                            /                    |
+Round: 96                  P1                    |
+                            \                    |
+Round: 97                    P2                  |
+                            /                    |
+Round: 98                  P1                    |
+                            \                    |
+Round: 99                    P2                  |
+                            /                    |
+Round: 100                 P1                    |
+                            \                    |
+Round: 101                   P2                  |
+                              \                  |
+Round: 102                     P2                |
+                              /                  |
+Round: 103                   P1                  |
+                            /                    |
+Round: 104                 P1                    |
+                            \                    |
+Round: 105                   P2                  |
+                            /                    |
+Round: 106                 P1                    |
+                            \                    |
+Round: 107                   P2                  |
+                              \                  |
+Round: 108                     P2                |
+                              /                  |
+Round: 109                   P1                  |
+                              \                  |
+Round: 110                     P2                |
+                              /                  |
+Round: 111                   P1                  |
+                            /                    |
+Round: 112                 P1                    |
+                          /                      |
+Round: 113               P1                      |
+                        /                        |
+Round: 114             P1                        |
+                      /                          |
+Round: 115           P1                          |
+                    /                            |
+Round: 116         P1                            |
+                    \                            |
+Round: 117           P2                          |
+                    /                            |
+Round: 118         P1                            |
+                    \                            |
+Round: 119           P2                          |
+                    /                            |
+Round: 120         P1                            |
+                    \                            |
+Round: 121           P2                          |
+                      \                          |
+Round: 122             P2                        |
+                        \                        |
+Round: 123               P2                      |
+                        /                        |
+Round: 124             P1                        |
+                      /                          |
+Round: 125           P1                          |
+                    /                            |
+Round: 126         P1                            |
+                  /                              |
+Round: 127       P1                              |
+                  \                              |
+Round: 128         P2                            |
+                    \                            |
+Round: 129           P2                          |
+                    /                            |
+Round: 130         P1                            |
+                  /                              |
+Round: 131       P1                              |
+                  \                              |
+Round: 132         P2                            |
+                    \                            |
+Round: 133           P2                          |
+                    /                            |
+Round: 134         P1                            |
+                  /                              |
+Round: 135       P1                              |
+                  \                              |
+Round: 136         P2                            |
+                  /                              |
+Round: 137       P1                              |
+                /                                |
+Round: 138     P1                                |
+              /                                  |
+Round: 139   P1                                  |
+            /                                    |
+Round: 140 P1                                    |
+            \                                    |
+Round: 141   P2                                  |
+              \                                  |
+Round: 142     P2                                |
+                \                                |
+Round: 143       P2                              |
+                /                                |
+Round: 144     P1                                |
+              /                                  |
+Round: 145   P1                                  |
+              \                                  |
+Round: 146     P2                                |
+                \                                |
+Round: 147       P2                              |
+                  \                              |
+Round: 148         P2                            |
+                    \                            |
+Round: 149           P2                          |
+                      \                          |
+Round: 150             P2                        |
+                      /                          |
+Round: 151           P1                          |
+                    /                            |
+Round: 152         P1                            |
+                    \                            |
+Round: 153           P2                          |
+                      \                          |
+Round: 154             P2                        |
+                        \                        |
+Round: 155               P2                      |
+                          \                      |
+Round: 156                 P2                    |
+                          /                      |
+Round: 157               P1                      |
+                          \                      |
+Round: 158                 P2                    |
+                            \                    |
+Round: 159                   P2                  |
+                              \                  |
+Round: 160                     P2                |
+                                \                |
+Round: 161                       P2              |
+                                  \              |
+Round: 162                         P2            |
+                                    \            |
+Round: 163                           P2          |
+                                      \          |
+Round: 164                             P2        |
+                                        \        |
+Round: 165                               P2      |
+                                        /        |
+Round: 166                             P1        |
+                                      /          |
+Round: 167                           P1          |
+                                    /            |
+Round: 168                         P1            |
+                                    \            |
+Round: 169                           P2          |
+                                    /            |
+Round: 170                         P1            |
+                                    \            |
+Round: 171                           P2          |
+                                      \          |
+Round: 172                             P2        |
+                                      /          |
+Round: 173                           P1          |
+                                      \          |
+Round: 174                             P2        |
+                                      /          |
+Round: 175                           P1          |
+                                    /            |
+Round: 176                         P1            |
+                                    \            |
+Round: 177                           P2          |
+                                      \          |
+Round: 178                             P2        |
+                                      /          |
+Round: 179                           P1          |
+                                      \          |
+Round: 180                             P2        |
+                                      /          |
+Round: 181                           P1          |
+                                      \          |
+Round: 182                             P2        |
+                                      /          |
+Round: 183                           P1          |
+                                    /            |
+Round: 184                         P1            |
+                                  /              |
+Round: 185                       P1              |
+                                /                |
+Round: 186                     P1                |
+                                \                |
+Round: 187                       P2              |
+                                /                |
+Round: 188                     P1                |
+                              /                  |
+Round: 189                   P1                  |
+                              \                  |
+Round: 190                     P2                |
+                              /                  |
+Round: 191                   P1                  |
+                            /                    |
+Round: 192                 P1                    |
+                            \                    |
+Round: 193                   P2                  |
+                              \                  |
+Round: 194                     P2                |
+                              /                  |
+Round: 195                   P1                  |
+                            /                    |
+Round: 196                 P1                    |
+                          /                      |
+Round: 197               P1                      |
+                        /                        |
+Round: 198             P1                        |
+                      /                          |
+Round: 199           P1                          |
+                      \                          |
+Round: 200             P2                        |
+                        \                        |
+Round: 201               P2                      |
+                        /                        |
+Round: 202             P1                        |
+                        \                        |
+Round: 203               P2                      |
+                        /                        |
+Round: 204             P1                        |
+                      /                          |
+Round: 205           P1                          |
+                      \                          |
+Round: 206             P2                        |
+                        \                        |
+Round: 207               P2                      |
+                        /                        |
+Round: 208             P1                        |
+                        \                        |
+Round: 209               P2                      |
+                        /                        |
+Round: 210             P1                        |
+                        \                        |
+Round: 211               P2                      |
+                          \                      |
+Round: 212                 P2                    |
+                          /                      |
+Round: 213               P1                      |
+                        /                        |
+Round: 214             P1                        |
+                      /                          |
+Round: 215           P1                          |
+                      \                          |
+Round: 216             P2                        |
+                        \                        |
+Round: 217               P2                      |
+                          \                      |
+Round: 218                 P2                    |
+                          /                      |
+Round: 219               P1                      |
+                          \                      |
+Round: 220                 P2                    |
+                            \                    |
+Round: 221                   P2                  |
+                              \                  |
+Round: 222                     P2                |
+                              /                  |
+Round: 223                   P1                  |
+                              \                  |
+Round: 224                     P2                |
+                                \                |
+Round: 225                       P2              |
+                                  \              |
+Round: 226                         P2            |
+                                    \            |
+Round: 227                           P2          |
+                                      \          |
+Round: 228                             P2        |
+                                        \        |
+Round: 229                               P2      |
+                                        /        |
+Round: 230                             P1        |
+                                      /          |
+Round: 231                           P1          |
+                                      \          |
+Round: 232                             P2        |
+                                        \        |
+Round: 233                               P2      |
+                                          \      |
+Round: 234                                 P2    |
+                                          /      |
+Round: 235                               P1      |
+                                        /        |
+Round: 236                             P1        |
+                                        \        |
+Round: 237                               P2      |
+                                          \      |
+Round: 238                                 P2    |
+                                            \    |
+Round: 239                                   P2  |
+                                            /    |
+Round: 240                                 P1    |
+                                          /      |
+Round: 241                               P1      |
+                                          \      |
+Round: 242                                 P2    |
+                                            \    |
+Round: 243                                   P2  |
+                                              \  |
+Round: 244                                     P2|
+                                              /  |
+Round: 245                                   P1  |
+                                              \  |
+Round: 246                                     P2|
+                                                \|
+Round: 247                                       P2
+                                                 |\
+Round: 248                                       | P2
+                                                 |  \
+Round: 249                                       |   P2
+                                                 |  /
+Round: 250                                       | P1
+                                                 |  \
+Round: 251                                       |   P2
+                                                 |    \
+Round: 252                                       |     P2
+                                                 |    /
+Round: 253                                       |   P1
+                                                 |  /
+Round: 254                                       | P1
+                                                 |  \
+Round: 255                                       |   P2
+                                                 |    \
+Round: 256                                       |     P2
+                                                 |      \
+Round: 257                                       |       P2
+                                                 |      /
+Round: 258                                       |     P1
+                                                 |    /
+Round: 259                                       |   P1
+                                                 |    \
+Round: 260                                       |     P2
+                                                 |    /
+Round: 261                                       |   P1
+                                                 |  /
+Round: 262                                       | P1
+                                                 |  \
+Round: 263                                       |   P2
+                                                 |  /
+Round: 264                                       | P1
+                                                 |/
+Round: 265                                       P1
+                                                /|
+Round: 266                                     P1|
+                                                \|
+Round: 267                                       P2
+                                                 |\
+Round: 268                                       | P2
+                                                 |/
+Round: 269                                       P1
+                                                /|
+Round: 270                                     P1|
+                                              /  |
+Round: 271                                   P1  |
+                                              \  |
+Round: 272                                     P2|
+                                              /  |
+Round: 273                                   P1  |
+                                            /    |
+Round: 274                                 P1    |
+                                            \    |
+Round: 275                                   P2  |
+                                            /    |
+Round: 276                                 P1    |
+                                            \    |
+Round: 277                                   P2  |
+                                            /    |
+Round: 278                                 P1    |
+                                          /      |
+Round: 279                               P1      |
+                                        /        |
+Round: 280                             P1        |
+                                        \        |
+Round: 281                               P2      |
+                                          \      |
+Round: 282                                 P2    |
+                                            \    |
+Round: 283                                   P2  |
+                                              \  |
+Round: 284                                     P2|
+                                              /  |
+Round: 285                                   P1  |
+                                              \  |
+Round: 286                                     P2|
+                                                \|
+Round: 287                                       P2
+                                                /|
+Round: 288                                     P1|
+                                                \|
+Round: 289                                       P2
+                                                 |\
+Round: 290                                       | P2
+                                                 |/
+Round: 291                                       P1
+                                                /|
+Round: 292                                     P1|
+                                              /  |
+Round: 293                                   P1  |
+                                            /    |
+Round: 294                                 P1    |
+                                          /      |
+Round: 295                               P1      |
+                                          \      |
+Round: 296                                 P2    |
+                                          /      |
+Round: 297                               P1      |
+                                          \      |
+Round: 298                                 P2    |
+                                            \    |
+Round: 299                                   P2  |
+                                              \  |
+Round: 300                                     P2|
+                                              /  |
+Round: 301                                   P1  |
+                                              \  |
+Round: 302                                     P2|
+                                                \|
+Round: 303                                       P2
+                                                 |\
+Round: 304                                       | P2
+                                                 |  \
+Round: 305                                       |   P2
+                                                 |  /
+Round: 306                                       | P1
+                                                 |  \
+Round: 307                                       |   P2
+                                                 |  /
+Round: 308                                       | P1
+                                                 |  \
+Round: 309                                       |   P2
+                                                 |  /
+Round: 310                                       | P1
+                                                 |  \
+Round: 311                                       |   P2
+                                                 |  /
+Round: 312                                       | P1
+                                                 |/
+Round: 313                                       P1
+                                                 |\
+Round: 314                                       | P2
+                                                 |/
+Round: 315                                       P1
+                                                /|
+Round: 316                                     P1|
+                                              /  |
+Round: 317                                   P1  |
+                                              \  |
+Round: 318                                     P2|
+                                              /  |
+Round: 319                                   P1  |
+                                              \  |
+Round: 320                                     P2|
+                                                \|
+Round: 321                                       P2
+                                                /|
+Round: 322                                     P1|
+                                                \|
+Round: 323                                       P2
+                                                 |\
+Round: 324                                       | P2
+                                                 |/
+Round: 325                                       P1
+                                                 |\
+Round: 326                                       | P2
+                                                 |/
+Round: 327                                       P1
+                                                /|
+Round: 328                                     P1|
+                                              /  |
+Round: 329                                   P1  |
+                                              \  |
+Round: 330                                     P2|
+                                              /  |
+Round: 331                                   P1  |
+                                              \  |
+Round: 332                                     P2|
+                                                \|
+Round: 333                                       P2
+                                                /|
+Round: 334                                     P1|
+                                                \|
+Round: 335                                       P2
+                                                /|
+Round: 336                                     P1|
+                                                \|
+Round: 337                                       P2
+                                                 |\
+Round: 338                                       | P2
+                                                 |/
+Round: 339                                       P1
+                                                /|
+Round: 340                                     P1|
+                                                \|
+Round: 341                                       P2
+                                                 |\
+Round: 342                                       | P2
+                                                 |  \
+Round: 343                                       |   P2
+                                                 |  /
+Round: 344                                       | P1
+                                                 |  \
+Round: 345                                       |   P2
+                                                 |    \
+Round: 346                                       |     P2
+                                                 |      \
+Round: 347                                       |       P2
+                                                 |      /
+Round: 348                                       |     P1
+                                                 |    /
+Round: 349                                       |   P1
+                                                 |  /
+Round: 350                                       | P1
+                                                 |/
+Round: 351                                       P1
+                                                 |\
+Round: 352                                       | P2
+                                                 |  \
+Round: 353                                       |   P2
+                                                 |    \
+Round: 354                                       |     P2
+                                                 |      \
+Round: 355                                       |       P2
+                                                 |      /
+Round: 356                                       |     P1
+                                                 |    /
+Round: 357                                       |   P1
+                                                 |  /
+Round: 358                                       | P1
+                                                 |  \
+Round: 359                                       |   P2
+                                                 |    \
+Round: 360                                       |     P2
+                                                 |    /
+Round: 361                                       |   P1
+                                                 |    \
+Round: 362                                       |     P2
+                                                 |      \
+Round: 363                                       |       P2
+                                                 |      /
+Round: 364                                       |     P1
+                                                 |    /
+Round: 365                                       |   P1
+                                                 |  /
+Round: 366                                       | P1
+                                                 |/
+Round: 367                                       P1
+                                                 |\
+Round: 368                                       | P2
+                                                 |/
+Round: 369                                       P1
+                                                /|
+Round: 370                                     P1|
+                                              /  |
+Round: 371                                   P1  |
+                                              \  |
+Round: 372                                     P2|
+                                              /  |
+Round: 373                                   P1  |
+                                            /    |
+Round: 374                                 P1    |
+                                            \    |
+Round: 375                                   P2  |
+                                            /    |
+Round: 376                                 P1    |
+                                            \    |
+Round: 377                                   P2  |
+                                              \  |
+Round: 378                                     P2|
+                                                \|
+Round: 379                                       P2
+                                                /|
+Round: 380                                     P1|
+                                                \|
+Round: 381                                       P2
+                                                /|
+Round: 382                                     P1|
+                                              /  |
+Round: 383                                   P1  |
+                                              \  |
+Round: 384                                     P2|
+                                                \|
+Round: 385                                       P2
+                                                 |\
+Round: 386                                       | P2
+                                                 |  \
+Round: 387                                       |   P2
+                                                 |  /
+Round: 388                                       | P1
+                                                 |/
+Round: 389                                       P1
+                                                 |\
+Round: 390                                       | P2
+                                                 |  \
+Round: 391                                       |   P2
+                                                 |    \
+Round: 392                                       |     P2
+                                                 |      \
+Round: 393                                       |       P2
+                                                 |        \
+Round: 394                                       |         P2
+                                                 |          \
+Round: 395                                       |           P2
+                                                 |            \
+Round: 396                                       |             P2
+                                                 |              \
+Round: 397                                       |               P2
+                                                 |                \
+Round: 398                                       |                 P2
+                                                 |                  \
+Round: 399                                       |                   P2
+                                                 |                    \
+Round: 400                                       |                     P2
+                                                 |                    /
+Round: 401                                       |                   P1
+                                                 |                  /
+Round: 402                                       |                 P1
+                                                 |                /
+Round: 403                                       |               P1
+                                                 |                \
+Round: 404                                       |                 P2
+                                                 |                /
+Round: 405                                       |               P1
+                                                 |              /
+Round: 406                                       |             P1
+                                                 |            /
+Round: 407                                       |           P1
+                                                 |          /
+Round: 408                                       |         P1
+                                                 |          \
+Round: 409                                       |           P2
+                                                 |          /
+Round: 410                                       |         P1
+                                                 |        /
+Round: 411                                       |       P1
+                                                 |        \
+Round: 412                                       |         P2
+                                                 |          \
+Round: 413                                       |           P2
+                                                 |          /
+Round: 414                                       |         P1
+                                                 |        /
+Round: 415                                       |       P1
+                                                 |        \
+Round: 416                                       |         P2
+                                                 |        /
+Round: 417                                       |       P1
+                                                 |      /
+Round: 418                                       |     P1
+                                                 |    /
+Round: 419                                       |   P1
+                                                 |    \
+Round: 420                                       |     P2
+                                                 |    /
+Round: 421                                       |   P1
+                                                 |  /
+Round: 422                                       | P1
+                                                 |  \
+Round: 423                                       |   P2
+                                                 |    \
+Round: 424                                       |     P2
+                                                 |    /
+Round: 425                                       |   P1
+                                                 |  /
+Round: 426                                       | P1
+                                                 |/
+Round: 427                                       P1
+                                                 |\
+Round: 428                                       | P2
+                                                 |  \
+Round: 429                                       |   P2
+                                                 |  /
+Round: 430                                       | P1
+                                                 |/
+Round: 431                                       P1
+                                                /|
+Round: 432                                     P1|
+                                                \|
+Round: 433                                       P2
+                                                 |\
+Round: 434                                       | P2
+                                                 |/
+Round: 435                                       P1
+                                                 |\
+Round: 436                                       | P2
+                                                 |  \
+Round: 437                                       |   P2
+                                                 |    \
+Round: 438                                       |     P2
+                                                 |      \
+Round: 439                                       |       P2
+                                                 |      /
+Round: 440                                       |     P1
+                                                 |    /
+Round: 441                                       |   P1
+                                                 |    \
+Round: 442                                       |     P2
+                                                 |      \
+Round: 443                                       |       P2
+                                                 |        \
+Round: 444                                       |         P2
+                                                 |        /
+Round: 445                                       |       P1
+                                                 |      /
+Round: 446                                       |     P1
+                                                 |    /
+Round: 447                                       |   P1
+                                                 |    \
+Round: 448                                       |     P2
+                                                 |    /
+Round: 449                                       |   P1
+                                                 |    \
+Round: 450                                       |     P2
+                                                 |    /
+Round: 451                                       |   P1
+                                                 |    \
+Round: 452                                       |     P2
+                                                 |      \
+Round: 453                                       |       P2
+                                                 |      /
+Round: 454                                       |     P1
+                                                 |    /
+Round: 455                                       |   P1
+                                                 |  /
+Round: 456                                       | P1
+                                                 |/
+Round: 457                                       P1
+                                                 |\
+Round: 458                                       | P2
+                                                 |  \
+Round: 459                                       |   P2
+                                                 |  /
+Round: 460                                       | P1
+                                                 |  \
+Round: 461                                       |   P2
+                                                 |    \
+Round: 462                                       |     P2
+                                                 |    /
+Round: 463                                       |   P1
+                                                 |    \
+Round: 464                                       |     P2
+                                                 |      \
+Round: 465                                       |       P2
+                                                 |        \
+Round: 466                                       |         P2
+                                                 |        /
+Round: 467                                       |       P1
+                                                 |      /
+Round: 468                                       |     P1
+                                                 |    /
+Round: 469                                       |   P1
+                                                 |    \
+Round: 470                                       |     P2
+                                                 |    /
+Round: 471                                       |   P1
+                                                 |  /
+Round: 472                                       | P1
+                                                 |  \
+Round: 473                                       |   P2
+                                                 |    \
+Round: 474                                       |     P2
+                                                 |    /
+Round: 475                                       |   P1
+                                                 |    \
+Round: 476                                       |     P2
+                                                 |    /
+Round: 477                                       |   P1
+                                                 |    \
+Round: 478                                       |     P2
+                                                 |    /
+Round: 479                                       |   P1
+                                                 |    \
+Round: 480                                       |     P2
+                                                 |    /
+Round: 481                                       |   P1
+                                                 |    \
+Round: 482                                       |     P2
+                                                 |    /
+Round: 483                                       |   P1
+                                                 |    \
+Round: 484                                       |     P2
+                                                 |    /
+Round: 485                                       |   P1
+                                                 |    \
+Round: 486                                       |     P2
+                                                 |      \
+Round: 487                                       |       P2
+                                                 |      /
+Round: 488                                       |     P1
+                                                 |      \
+Round: 489                                       |       P2
+                                                 |      /
+Round: 490                                       |     P1
+                                                 |    /
+Round: 491                                       |   P1
+                                                 |    \
+Round: 492                                       |     P2
+                                                 |      \
+Round: 493                                       |       P2
+                                                 |        \
+Round: 494                                       |         P2
+                                                 |          \
+Round: 495                                       |           P2
+                                                 |          /
+Round: 496                                       |         P1
+                                                 |        /
+Round: 497                                       |       P1
+                                                 |        \
+Round: 498                                       |         P2
+                                                 |          \
+Round: 499                                       |           P2
+                                                 |          /
+Round: 500                                       |         P1
+                                                 |          \
+Round: 501                                       |           P2
+
